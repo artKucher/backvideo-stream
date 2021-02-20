@@ -3,7 +3,7 @@
 if [[ ! -f `pwd`'/../.env' ]]; then
 
     function get_random {
-        echo `openssl rand -base64 16`
+        echo `openssl rand -hex 8`
     }
 
     touch `pwd`'/.env'

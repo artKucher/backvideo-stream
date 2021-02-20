@@ -13,6 +13,10 @@
         alias /app/backend/templates;
     }
 
+    location = /favicon.ico {
+            alias /app/favicon.ico;
+        }
+
     location /static {
         alias /app/static;
     }
